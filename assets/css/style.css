@@ -1,0 +1,123 @@
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family:roboto;
+    letter-spacing: 1px;
+}
+/* ========================================================= */
+
+body{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background: linear-gradient(74deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 2px 12px 1px #000000;
+    color: aliceblue;
+    height: 56vh;
+    width: 50%;
+    margin-top: 20vh;
+    border-radius: 10px;
+}
+
+section h1{
+    padding-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 2px 0 #4e4e4e;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00416d;
+}
+
+section form{
+    width: 50%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+section form label {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+section form input{
+    padding: 2px 0;
+    border-radius: 4px;
+}
+
+section form div{
+    display: flex;
+}
+
+section form div label{
+    margin-left: 8px;
+    font-size: 1rem;
+}
+
+section form select{
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+section form input[type=submit] {
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background: rgba(2, 180, 216, 0.25);
+    color: aliceblue;
+}
+
+section table{
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-top: 1px solid aliceblue;
+    border-left: 1px solid aliceblue;
+    border-right: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+    border-radius: 5px;
+}
+
+section table tr{
+    width: 50%;
+}
+
+section table tr th{
+    font-size: 1.2rem;
+}
+
+section .line{
+    height: 5px;
+    border-bottom: 2px solid #00416d;
+}
+
+section p{
+    padding: 10px 15px;
+    
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+
+

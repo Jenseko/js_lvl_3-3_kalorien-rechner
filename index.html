@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lvl_3-3_Kalorienrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Kalorien Rechner</h1>
+        <form action="#" onsubmit="return false">
+            <label for="">Körpergröße (in cm)</label>
+            <input type="number" name="height" id="height" required>
+            <label for="">Alter</label>
+            <input type="number" name="age" id="age" required>
+            <label for="">Gewicht (in kg)</label>
+            <input type="number" name="weight" id="weight" required>
+            <label for="">Körperbau</label>
+            <div>
+                <input type="radio" name="gender" id="gender" onchange="">
+                <label for="">Weiblich</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="gender" onchange="">
+                <label for="">Männlich</label>
+            </div>
+            <label for="">Arbeits- und Freizeitaktivität</label>
+            <select name="pal-factor-table" id="pal-factor-table" required>
+                <option value="0">...</option>
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschliesslich sitzende Tätigkeit</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender Tätigkeit</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <input type="submit" value="Submit" id='btn' onclick="showGrundumsatz()">
+        </form>
+        <table>
+            <tr>
+                <th></th>
+                <th>kcal</th>
+                <th>kJ</th>
+            </tr>
+            <tr>
+                <th>Grundumsatz</th>
+                <th id="outputGrundumsatz">0.00</th>
+                <th id="outputGrundumsatz_kJ">0.00</th>
+            </tr>
+            <tr>
+                <th>Gesamtumsatz</th>
+                <th id="resultGesamtumsatz">0.00</th>
+                <th id="outputGesamtumsatz_kJ">0.00</th>
+            </tr>
+        </table>
+        <div class="line"></div>
+        <p>*Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, da es verschiedene Fehlermöglichkeiten gibt wie abweichender Grundumsatz, falsche Zeiteinschätzung etc.</p>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
