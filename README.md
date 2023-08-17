@@ -1,4 +1,4 @@
-Kalorien Rechner mit javascript
+Kalorien Rechner mit JavaScript
 
 Live-View: https://jenseko.github.io/js_lvl_3-3_kalorien-rechner/
 
